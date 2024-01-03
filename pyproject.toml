@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cputempnotify"
+version = "0.1.0"
+description = ""
+authors = ["Pavel Druzhinin <druzini@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+entry-point = "cputempnotify.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.0"
+gpiozero = "^2.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
